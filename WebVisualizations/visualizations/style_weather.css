@@ -1,0 +1,97 @@
+h1 {
+    font-size: 40px;
+    margin-left: 40px;
+    color: cadetblue;
+}
+
+#description,
+#image {
+    float: left;  
+}
+
+#image {
+    width: 300px;
+    height: 300px;
+    margin-top : 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#first{
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 20px;
+    color: dimgray;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#second {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 20px;
+    color: dimgray;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 50px;
+}
+
+
+h2 {
+    font-size: 28px;
+    margin-left: 10px;
+    color: cadetblue;
+    margin-top: 20px;
+}
+
+#preview {
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#mainbutton {
+    background-color: cadetblue;
+}
+
+.left {
+    background-color: white;
+    margin: 20px
+}
+.right {
+    background-color: white;
+}
+
+.navbar {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.navbar-brand {
+    background-color: cadetblue;
+    font-size: 28px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 30px;
+    color: white;
+}
+.navbar-light .navbar-brand {
+    color: white;
+}
+
+@media (max-width : 767px) {
+    .navbar {
+    background: cadetblue;
+    }
+    .navbar-nav .nav-link {
+        padding-right: 0;
+        padding-left: 20px;
+    }
+  .navbar div {
+      background-color: white;
+  }
+}

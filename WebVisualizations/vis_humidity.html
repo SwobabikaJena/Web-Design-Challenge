@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="visualizations/style_pg1.css">
+</head>
+    
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-light">
+        <!-- Brand -->
+        <a class="navbar-brand" href="file:///C:/Users/Rajeeb/Documents/Git_Files/Web-Design-Challenge/WebVisualizations/landing_page.html">Latitude</a>
+    
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse flex-row-reverse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Plots</a>
+                <div class="dropdown-menu">
+                <a class="dropdown-item" href="file:///C:/Users/Rajeeb/Documents/Git_Files/Web-Design-Challenge/WebVisualizations/vis_mxtemp.html">Max Temperature</a>
+                <a class="dropdown-item" href="file:///C:/Users/Rajeeb/Documents/Git_Files/Web-Design-Challenge/WebVisualizations/vis_humidity.html">Humidity</a>
+                <a class="dropdown-item" href="file:///C:/Users/Rajeeb/Documents/Git_Files/Web-Design-Challenge/WebVisualizations/vis_cloudiness.html">Cloudiness</a>
+                <a class="dropdown-item" href="file:///C:/Users/Rajeeb/Documents/Git_Files/Web-Design-Challenge/WebVisualizations/vis_windspeed.html">Wind speed</a>
+                </div>
+            </li>
+            <!-- Navbar Link -->
+            <li class="nav-item">
+                <a class="nav-link" href="file:///C:/Users/Rajeeb/Documents/Git_Files/Web-Design-Challenge/WebVisualizations/comparisons.html">Comparison</a>
+            </li>
+            <!-- Navbar Link -->
+            <li class="nav-item">
+                <a class="nav-link" href="file:///C:/Users/Rajeeb/Documents/Git_Files/Web-Design-Challenge/WebVisualizations/table.html">Data</a>
+            </li>
+    
+            </ul>
+    
+        </div>
+    
+    </nav>
+    
+    <div class="jumbotron">
+        <!--First Row -->
+        <div class="row">
+        
+            <!-- First of two columns -->
+            <div class="col-md-8">
+                <div class="left">
+                    <h1>Humidity</h1>
+                    <hr>
+                    <img id="image" src="assets\images\LatVsHumidity.png" alt="LatVshumidity Image">
+                    <p id= "first">The above plot analyses the relationship between a city's latitude with it's humidity levels. The plot does not show any general drift (either upward or downward) while considering the data points. Hence the latitude has no effect on the city's humidity.</p>
+                </div>
+            </div>
+
+            <!--Second of two columns-->
+            <div class="col-md-4">
+                <div class="right">
+                    <h2>Visualizations</h2>
+                    <hr>
+                    <a href="file:///C:/Users/Rajeeb/Documents/Git_Files/Web-Design-Challenge/WebVisualizations/vis_mxtemp.html">
+                    <img id="preview" src="assets\images\LatVsTemp.png" alt="LatVsTemp Image">
+                    </a>
+                    <a href="file:///C:/Users/Rajeeb/Documents/Git_Files/Web-Design-Challenge/WebVisualizations/vis_humidity.html">
+                    <img id="preview1" src="assets\images\LatVsHumidity.png" alt="LatVshumidity Image">
+                    </a>
+                    <a href="file:///C:/Users/Rajeeb/Documents/Git_Files/Web-Design-Challenge/WebVisualizations/vis_cloudiness.html">
+                    <img id="preview" src="assets\images\LatVsCloudiness.png" alt="LatVsCloudiness Image">
+                    </a>
+                    <a href="file:///C:/Users/Rajeeb/Documents/Git_Files/Web-Design-Challenge/WebVisualizations/vis_windspeed.html">
+                    <img id="preview" src="assets\images\LatVsWind_Speed.png" alt="LatVsWindSpeed Image">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
+</body>
+
+</html>
