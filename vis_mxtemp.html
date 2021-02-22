@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="visualizations/style_pg1.css">
+</head>
+    
+<body>
+    
+    <nav class="navbar navbar-expand-md navbar-light">
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">Latitude</a>
+    
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse flex-row-reverse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Plots</a>
+                <div class="dropdown-menu">
+                <a class="dropdown-item" href="vis_mxtemp.html">Max Temperature</a>
+                <a class="dropdown-item" href="vis_humidity.html">Humidity</a>
+                <a class="dropdown-item" href="vis_cloudiness.html">Cloudiness</a>
+                <a class="dropdown-item" href="vis_windspeed.html">Wind speed</a>
+                </div>
+            </li>
+            <!-- Navbar Link -->
+            <li class="nav-item">
+                <a class="nav-link" href="comparisons.html">Comparison</a>
+            </li>
+            <!-- Navbar Link -->
+            <li class="nav-item">
+                <a class="nav-link" href="table.html">Data</a>
+            </li>
+    
+            </ul>
+    
+        </div>
+    
+    </nav>
+
+    <!--Add jumbotron for grey background -->
+    <div class="jumbotron">
+        <!--First Row -->
+        <div class="row">
+        
+            <!-- First of two columns-main page content -->
+            <div class="col-md-8">
+                <div class="left">
+                    <h1>Max Temperature</h1>
+                    <hr>
+                    <img id="image" src="assets\images\LatVsTemp.png" alt="LatVsmaxtemp image">
+                    <p id= "first">The above plot analyses the relationship between a city's latitude with its maximum observed temperature. The plot shows a negative association about the equator (0-degree lat) i.e. as we move away from the equator, both towards north pole (+ 90 degree lat) and south pole (- 90 degree lat), the maximum temperature starts decreasing with increase in latitude position.</p>
+                </div>
+            </div>
+
+        <!--Second of two columns - sidebar-->
+      
+            <div class="col-md-4 sidebar">
+                <div class="right">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>Visualizations</h2>
+                            <hr>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="col-sm-3 col-md-6">
+                            <a href="vis_mxtemp.html">
+                            <img id="preview1" src="assets\images\LatVsTemp.png" width="150px" height="150px" alt="LatVsTemp Image">
+                            </a>
+                        </div>
+                        <div class="col-sm-3 col-md-6">
+                            <a href="vis_humidity.html">
+                            <img id="preview" src="assets\images\LatVsHumidity.png" width="150px" height="150px" alt="LatVshumidity Image">
+                            </a>
+                        </div>
+                        <div class="col-sm-3 col-md-6">
+                            <a href="vis_cloudiness.html">
+                            <img id="preview" src="assets\images\LatVsCloudiness.png" width="150px" height="150px" alt="LatVsCloudiness Image">
+                            </a>
+                        </div>
+                        <div class="col-sm-3 col-md-6">
+                            <a href="vis_windspeed.html">
+                            <img id="preview" src="assets\images\LatVsWind_Speed.png" width="150px" height="150px" alt="LatVsWindSpeed Image">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
+</body>
+
+</html>
